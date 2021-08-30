@@ -30,8 +30,10 @@ const featuredProject = projects[0];
 
       .img {
         display: block;
-        width: 100%;
-        height: auto;
+        // width: 100%;
+        // height: auto;
+        width: 1600px;
+        height: 1800px;
       }
 
       .gradient,
@@ -114,19 +116,19 @@ const featuredProject = projects[0];
           margin-left: 1em;
         }
 
-        &:nth-of-type(1) {
+        &:nth-of-type(1) &:hover {
           .invert {
             background-color: var(--c-pink);
           }
         }
 
-        &:nth-of-type(2) {
+        &:nth-of-type(2) &:hover {
           .invert {
             background-color: var(--c-blue);
           }
         }
 
-        &:nth-of-type(3) {
+        &:nth-of-type(3) &:hover {
           .invert {
             background-color: var(--c-green);
           }
@@ -136,6 +138,7 @@ const featuredProject = projects[0];
           .invert {
             clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
           }
+          // color: var(--c-blue)
         }
       }
 
@@ -213,6 +216,17 @@ const featuredProject = projects[0];
         src="https://images.unsplash.com/photo-1522673999312-93aa76caeda6?w=1200&q=75"
         sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
       /> -->
+      <img
+        width="1600px"
+        height="1800px"
+        class="img"
+        src="https://images.unsplash.com/photo-1585438896046-2587fb61ae50?w=1200&q=75"
+        srcSet="https://images.unsplash.com/photo-1585438896046-2587fb61ae50w=1200&q=75 800w,
+        https://images.unsplash.com/photo-1585438896046-2587fb61ae50?w=1200&q=75 1200w,
+        https://images.unsplash.com/photo-1585438896046-2587fb61ae50?w=1600&q=75 1600w,
+        https://images.unsplash.com/photo-1585438896046-2587fb61ae50?w=2400&q=75 2400w,"
+        sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
+      />
       <div class="gradient" />
       <div class="gradient2" />
       <div class="overlay">
