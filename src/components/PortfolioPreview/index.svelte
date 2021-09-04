@@ -1,6 +1,5 @@
 <script>
     export let project;
-    console.log('[project]', project)
 </script>
 <div class="card">
     <div class="titleCard" style={`background-image:url(${project.img})`}>
