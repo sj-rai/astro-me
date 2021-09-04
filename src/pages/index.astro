@@ -4,11 +4,11 @@ import MainHead from '../components/MainHead.astro';
 import Button from '../components/Button/index.jsx';
 import Nav from '../components/Nav/index.jsx';
 import Footer from '../components/Footer/index.jsx';
-import PorfolioPreview from '../components/PortfolioPreview/index.jsx';
+import PorfolioPreview from '../components/PortfolioPreview/index.svelte';
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = Astro.fetchContent('./project/**/*.md');
-const featuredProject = projects[0];
+const project = projects[0];
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -251,7 +251,7 @@ const featuredProject = projects[0];
       <div class="grid">
         <div class="section">
           <h3 class="sectionTitle">Selected Work</h3>
-          <PorfolioPreview project={featuredProject} />
+          <PorfolioPreview project={project} />
           <div class="tac mt4">
             <a href="/projects">
               <Button>View All</Button>
