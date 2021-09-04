@@ -1,5 +1,6 @@
-# Astro Starter Kit: Portfolio
+# Portfolio site (WIP)
 
+Built with astro, svelte(and some preact, trying to migrate preact to svelte) and SASS
 ```
 npm init astro -- --template portfolio
 ```
