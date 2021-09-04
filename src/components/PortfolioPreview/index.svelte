@@ -15,11 +15,10 @@
             {t}
             </div>
         ))} -->
-        {#each project as t, i}
+        {#each project.tags as t, i}
             <div class="tag" data-tag={t}>
-            t
+            {t}
             </div>
-        ))}
         {/each}
         </div>
         <a class="link" href={project.url}>
