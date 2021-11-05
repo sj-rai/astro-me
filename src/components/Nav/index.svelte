@@ -3,7 +3,7 @@
       <div class="monogram">SR</div>
     </a>
     <a class="link" href="/projects">
-      Portfolio
+      Projects
     </a>
     <a class="link" href="/about">
       About
@@ -27,69 +27,77 @@
 </nav>
 <style lang="scss">
     .nav {
-    display: flex;
-    align-items: center;
-    padding-top: 1rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: beige;
+      display: flex;
+      align-items: center;
+      padding-top: 1rem;
+      padding-right: 2rem;
+      padding-bottom: 1rem;
+      padding-left: 2rem;
     }
 
     .logolink {
-    display: block;
-    color: var(--t-fg);
-    text-decoration: none;
+      display: block;
+      color: var(--t-fg);
+      text-decoration: none;
     }
 
     .link {
-    color: var(--t-subdue);
-    display: block;
-    margin-left: 1rem;
-    text-decoration: none;
-    font-size: var(--f-d1);
-    text-transform: uppercase;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
+      color: var(--t-subdue);
+      display: block;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-size: var(--f-d1);
+      text-transform: uppercase;
+      padding-top: 0.75em;
+      padding-bottom: 0.75em;
 
-    &:focus,
-    &:hover {
-        color: var(--t-active);
-    }
+      &:focus,
+      &:hover {
+          // color: var(--t-active);
+          color: #ff4747
+      }
     }
 
     .monogram {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2em;
-    height: 2em;
-    margin-right: 0.5rem;
-    color: var(--c-black);
-    font-weight: 900;
-    letter-spacing: -0.125rem;
-    border: 3px solid currentColor;
-    border-radius: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2em;
+      height: 2em;
+      margin-right: 0.5rem;
+      color: var(--c-black);
+      font-weight: 900;
+      letter-spacing: -0.125rem;
+      border: 3px solid currentColor;
+      border-radius: 40%;
+      &:hover {
+          // fill: var(--t-active);
+          color: #ff4747
+      }
     }
 
     .social {
-    display: block;
-    margin-left: auto;
+      display: block;
+      margin-left: auto;
 
     + .social {
         margin-left: 0.75rem;
-    }
+      }
     }
 
     .socialicon {
-    display: block;
-    width: 1.25rem;
-    height: 1.25rem;
-    fill: var(--t-subdue);
-    transition: fill linear 150ms;
+      display: block;
+      width: 1.25rem;
+      height: 1.25rem;
+      fill: var(--t-subdue);
+      transition: fill linear 150ms;
 
-    &:hover {
-        fill: var(--t-active);
-    }
+      &:hover {
+          // fill: var(--t-active);
+          fill: #ff4747
+      }
     }
 
 </style>

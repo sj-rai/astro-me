@@ -21,7 +21,7 @@
         {/each}
         </div>
         <a class="link" href={project.url}>
-        <span class="linkInner">View</span>
+          <span class="linkInner">View</span>
         </a>
     </div>
 </div>
@@ -34,6 +34,7 @@
 }
 
 .title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position: absolute;
   top: 0;
   width: 100%;
@@ -58,6 +59,7 @@
 }
 
 .desc {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: var(--f-u1);
   line-height: 1.4;
 }
@@ -86,6 +88,7 @@
     opacity: 1;
 
     .linkInner {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       transform: translateY(0);
       border-color: rgba(255, 255, 255, 0.625);
     }
@@ -105,6 +108,7 @@
 }
 
 .tags {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: var(--f-d2);
   text-transform: uppercase;
 }

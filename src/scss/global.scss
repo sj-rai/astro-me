@@ -154,12 +154,18 @@ $colors: 'black', 'blue', 'white';
 
 // wrapper
 .wrapper {
-  max-width: 80em;
+  background-color:#ff9b29;
+  color: beige;
+  // font-family: 'Times New Roman', Times, serif;
+  // max-width: 80em;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .wrapper__readable {
   max-width: 50em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

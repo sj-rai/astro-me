@@ -13,6 +13,9 @@ const { content } = Astro.props;
       .hero {
         padding: 8rem;
         display: flex;
+        // background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+        // background-image: url(${content.img})
+        // background-image: url(var(--img-url))
         background-color: var(--t-fg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -68,7 +71,7 @@ const { content } = Astro.props;
   </head>
   <body>
     <Nav />
-    <header style={`background-image:url(${content.img})`} class="hero">
+    <header style={`background-image:linear-gradient(0deg, #00000088 30%, #ffffff44 100%),url(${content.img})`} class="hero">
       <h1 class="title">{content.title}</h1>
     </header>
     <div class="leadIn">
