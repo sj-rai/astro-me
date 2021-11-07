@@ -55,15 +55,24 @@
   --t-active: var(--c-blue);
 }
 
+@font-face {
+  font-family: Franchise;
+  src: url('Franchise.ttf');
+}
+
 // Base
 
 body {
   margin: 0;
   color: var(--t-fg);
   // font-family: 'Inter', 'system-ui', sans-serif;
-  font-family: 'Magilio', 'Bitter', 'system-ui', sans-serif;
+  font-family: 'Franchise', 'Magilio', 'Bitter', 'system-ui', sans-serif;
   // font-family: 'Overpass', 'system-ui', sans-serif;
 }
+// @font-face {
+//   font-family: Franchise;
+//   src: url('../../public/assets/Franchise.ttf');
+// }
 
 * {
   box-sizing: content-box;
