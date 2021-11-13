@@ -24,7 +24,10 @@ const projects = Astro.fetchContent('./project/*.md')
         grid-gap: 3rem;
       }
       .flex-child {
-        flex: 1 0 21%;
+        flex: 1 0 51%;
+        @media (min-width: 1200px) {
+          flex: 1 0 21%;
+        }
       }
     </style>
   </head>
