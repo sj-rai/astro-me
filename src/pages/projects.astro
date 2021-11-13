@@ -17,15 +17,26 @@ const projects = Astro.fetchContent('./project/*.md')
         display: grid;
         grid-gap: 3rem;
       }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        grid-gap: 3rem;
+      }
+      .flex-child {
+        flex: 1 0 21%;
+      }
     </style>
   </head>
   <body>
     <Nav />
     <div class="wrapper">
       <h1 class="title mt4 mb4">All Projects</h1>
-      <div class="grid">
+      <div class="flex">
         {projects.map((project) => (
-          <PortfolioPreview project={project} />
+          <div class="flex-child">
+            <PortfolioPreview project={project} />
+          </div>
         ))}
       </div>
     </div>
