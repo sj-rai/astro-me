@@ -43,7 +43,10 @@ const project = projects[0];
         // background-image: url('/assets/mesh-gradient.jpg');
         // background-image: url('/assets/gradient.png');
         // background-color: #ff9b29;
-        background-color: #ff4747;
+        // background-color: #ff4747;
+        background: #FDFC47;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24FE41, #FDFC47); 
         // pointer-events: none;
         // mix-blend-mode: screen;
         color: var(--t-bg);
@@ -84,7 +87,8 @@ const project = projects[0];
         font-size: var(--f-u10);
         margin-bottom: 0.5rem;
         margin-top: 0;
-        color: beige;
+        // color: beige;
+        color: #003B00;
         // align-items: center;
         // text-align: center;
 
@@ -182,7 +186,11 @@ const project = projects[0];
       }
 
       .bio {
-        background-color: #ff4747;
+        background: #FDFC47;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        // background-color: #ff4747;
         line-height: 2;
         margin-bottom: 2rem;
 
